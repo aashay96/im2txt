@@ -97,11 +97,11 @@ def main(_):
           tts = gTTS(text=x, lang ='en', slow=True)
           music_file = 'pehla_sentence.mp3'
           tts.save(music_file)
-          print('ho gaya behenchod thread start')
+          #print('ho gaya behenchod thread start')
           
-          print('music loaded')
-          sound_alarm(os.path.basename(music_file))
-          print('music played')
+          #print('music loaded')
+          #sound_alarm(os.path.basename(music_file))
+          #print('music played')
 
 
         #ends here
