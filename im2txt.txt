@@ -1,0 +1,8 @@
+CHECKPOINT_PATH="../im2txt/im2txt/data/model.ckpt-2000000"
+VOCAB_FILE="../im2txt/im2txt/data/word_counts.txt"
+IMAGE_FILE="../im2txt/im2txt/data/simon.jpg"
+
+bazel build -c opt im2txt/run_inference
+
+bazel-bin/im2txt/run_inference   --checkpoint_path=${CHECKPOINT_PATH}   --vocab_file=${VOCAB_FILE}   --input_files=${IMAGE_FILE}
+
